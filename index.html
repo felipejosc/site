@@ -15,7 +15,7 @@
     header {
       background-color: #0077cc;
       color: white;
-      padding: 10px 20px;
+      padding: 20px;
       text-align: center;
     }
 
@@ -33,26 +33,27 @@
     header p {
       font-size: 1.2em;
       margin-top: 10px;
-      color: white
+      color: white;
     }
 
     .container {
       padding: 20px;
       max-width: 900px;
-      margin: auto;
+      margin: 0 auto;
     }
 
-    .image-placeholder {
-      width: 100%;
-      height: 300px;
-      background-color: #ccc;
+    .image-wrapper {
       display: flex;
-      align-items: center;
       justify-content: center;
-      color: #666;
-      font-size: 1.5em;
-      margin: 20px 0;
+      align-items: center;
+      margin: 40px 0;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      max-width: 300px;
       border-radius: 10px;
+      height: auto;
     }
 
     h2 {
@@ -68,18 +69,16 @@
       line-height: 1.8em;
     }
 
-     header {
-      background-color: #0077cc;
-      color: white;
-      padding: 20px 20px;
-      text-align: center;
-    }
-
-
-
     a {
       color: #00aaff;
       text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eaeaea;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -95,8 +94,8 @@
       <p>O FinanCY é o aliado perfeito para quem quer organizar suas finanças pessoais com facilidade. Com uma interface simples e funcionalidades eficientes, você controla seus gastos, ganhos e poupanças em um único lugar.</p>
     </section>
 
-    <div class="image-placeholder" style="background-color: transparent; height: auto; padding: 20px;">
-      <img src="https://i.imgur.com/7AscpH7.png" alt="Imagem ilustrativa" style="width: 50%; max-width: 300px; border-radius: 10px;">
+    <div class="image-wrapper">
+      <img src="https://i.imgur.com/7AscpH7.png" alt="Imagem ilustrativa">
     </div>
 
     <section>
@@ -117,4 +116,3 @@
   </footer>
 </body>
 </html>
-
