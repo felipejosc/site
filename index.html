@@ -1,123 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FinanCY - Controle de Gastos</title>
-  <style>
-    body {
-      background-color: #f4f4f4;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      color: #333;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinanCY - Controle de Gastos</title>
+<style>
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+}
 
-    header {
-      background-color: #0077cc;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-    h1 {
-      font-size: 48px;
-      color: #2c3e50;
-    }
+h1 {
+  font-size: 48px;
+  color: #2c3e50;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: white;
-    }
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: white;
+}
 
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: white;
-    }
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: white;
+}
 
-    .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-    .image-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 40px 0;
-    }
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
 
-    .image-wrapper img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 10px;
-      height: auto;
-    }
+.image-wrapper img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  height: auto;
+}
 
-    h2 {
-      color: #0077cc;
-    }
+h2 {
+  color: #0077cc;
+}
 
-    p {
-      font-size: 20px;
-      color: #555;
-    }
+p {
+  font-size: 20px;
+  color: #555;
+}
 
-    ul {
-      line-height: 1.8em;
-    }
+ul {
+  line-height: 1.8em;
+}
 
-    /* Recuo da lista dentro da seção de funcionalidades */
-    section ul {
-      padding-left: 20px;
-    }
+/* Recuo da lista dentro da seção de funcionalidades */
+section ul {
+  padding-left: 20px;
+}
 
-    a {
-      color: #00aaff;
-      text-decoration: none;
-    }
+a {
+  color: #00aaff;
+  text-decoration: none;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #eaeaea;
-      margin-top: 40px;
-    }
-  </style>
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eaeaea;
+  margin-top: 40px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.verde {
+  color: green;
+}
+
+.vermelho {
+  color: red;
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>FinanCY</h1>
-    <p>Seu parceiro para um futuro financeiro organizado.</p>
-  </header>
+<header>
+<h1>FinanCY</h1>
+<p>Seu parceiro para um futuro financeiro organizado.</p>
+</header>
 
-  <div class="container">
-    <section>
-      <h2>Sobre o Projeto</h2>
-      <p>O FinanCY é o aliado perfeito para quem quer organizar suas finanças pessoais com facilidade. Com uma interface simples e funcionalidades eficientes, você controla seus gastos, ganhos e poupanças em um único lugar.</p>
-    </section>
+<div class="container">
+<section>
+<h2>Sobre o Projeto</h2>
+<p>O FinanCY é o aliado perfeito para quem quer organizar suas finanças pessoais com facilidade. Com uma interface simples e funcionalidades eficientes, você controla seus gastos, ganhos e poupanças em um único lugar.</p>
+</section>
 
-    <div class="image-wrapper">
-      <img src="https://i.imgur.com/7AscpH7.png" alt="Imagem ilustrativa">
-    </div>
+<div class="image-wrapper">
+<img src="https://i.imgur.com/7AscpH7.png" alt="Imagem ilustrativa">
+</div>
 
-    <section>
-      <h2>Funcionalidades</h2>
-      <ul>
-        <li>Cadastro de entradas e saídas</li>
-        <li>Categorias personalizadas de gastos</li>
-        <li>Gráficos mensais de despesas</li>
-        <li>Alertas de orçamento estourado</li>
-        <li>Exportação de relatórios em PDF</li>
-        <li>Modo escuro e sincronização em nuvem</li>
-      </ul>
-    </section>
-  </div>
+<section>
+<h2>Funcionalidades</h2>
+<ul>
+<li>Cadastro de entradas e saídas</li>
+<li>Categorias personalizadas de gastos</li>
+<li>Gráficos mensais de despesas</li>
+<li>Alertas de orçamento estourado</li>
+<li>Exportação de relatórios em PDF</li>
+<li>Modo escuro e sincronização em nuvem</li>
+</ul>
+</section>
 
-  <footer>
-    &copy; 2025 FinanCY - Todos os direitos reservados.
-  </footer>
+<section>
+<h2>Simulação Financeira</h2>
+<label for="salario">Digite seu salário:</label>
+<input type="number" id="salario" placeholder="Ex: 3000">
+
+<label for="despesa">Digite uma despesa:</label>
+<input type="number" id="despesa" placeholder="Ex: 250">
+
+<button onclick="adicionarDespesa()">Adicionar Despesa</button>
+<button onclick="finalizar()">Finalizar</button>
+
+<ul id="listaDespesas"></ul>
+
+<div class="resultado" id="resultado"></div>
+</section>
+</div>
+
+<footer>
+&copy; 2025 FinanCY - Todos os direitos reservados.
+</footer>
+
+<script>
+let despesas = [];
+
+function adicionarDespesa() {
+  const valor = parseFloat(document.getElementById("despesa").value);
+  if (!isNaN(valor) && valor > 0) {
+    despesas.push(valor);
+    atualizarLista();
+    document.getElementById("despesa").value = "";
+  } else {
+    alert("Insira um valor válido de despesa.");
+  }
+}
+
+function atualizarLista() {
+  const lista = document.getElementById("listaDespesas");
+  lista.innerHTML = "";
+  despesas.forEach((valor, index) => {
+    const item = document.createElement("li");
+    item.textContent = `Despesa ${index + 1}: R$ ${valor.toFixed(2)}`;
+    lista.appendChild(item);
+  });
+}
+
+function finalizar() {
+  const salario = parseFloat(document.getElementById("salario").value);
+  const total = despesas.reduce((acc, val) => acc + val, 0);
+  const resultado = document.getElementById("resultado");
+
+  if (isNaN(salario) || salario <= 0) {
+    alert("Digite um salário válido.");
+    return;
+  }
+
+  if (total <= salario) {
+    resultado.innerHTML = `Você está no <span class="verde">VERDE</span> com R$ ${(salario - total).toFixed(2)} sobrando.`;
+  } else {
+    resultado.innerHTML = `Você está no <span class="vermelho">VERMELHO</span> com R$ ${(total - salario).toFixed(2)} de déficit.`;
+  }
+}
+</script>
 </body>
 </html>
+
